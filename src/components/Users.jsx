@@ -51,6 +51,8 @@ const Users = () => {
 		return user.name;
 	};
 
+	const interactive = true;
+
 	useEffect(() => {
 		axios
 			.get("https://jsonplaceholder.typicode.com/users", {
@@ -68,6 +70,7 @@ const Users = () => {
 	return (
 		<>
 			<GlobalSearch
+				interactive={interactive}
 				isLoaded={isLoaded}
 				data={usersData}
 				config={config}

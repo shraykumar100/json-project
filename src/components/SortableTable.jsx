@@ -3,7 +3,7 @@ import Table from "./Table";
 import useSort from "../hooks/use-sort";
 
 function SortableTable(props) {
-	const { config, data } = props;
+	const { config, data, interactive } = props;
 	const { sortOrder, sortBy, sortedData, setSortColumn } = useSort(
 		data,
 		config
@@ -29,7 +29,14 @@ function SortableTable(props) {
 		};
 	});
 
-	return <Table {...props} data={sortedData} config={updatedConfig} />;
+	return (
+		<Table
+			interactive={interactive}
+			{...props}
+			data={sortedData}
+			config={updatedConfig}
+		/>
+	);
 }
 
 function getIcons(label, sortBy, sortOrder) {

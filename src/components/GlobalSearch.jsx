@@ -2,7 +2,7 @@ import { useState } from "react";
 import TablePage from "../pages/TablePage";
 import ReactLoading from "react-loading";
 import { IoSearch } from "react-icons/io5";
-const GlobalSearch = ({ data, config, keyFn, isLoaded }) => {
+const GlobalSearch = ({ data, config, keyFn, isLoaded, interactive }) => {
 	const [searchTerm, setSearchTerm] = useState("");
 
 	const handleInputChange = (event) => {
@@ -32,7 +32,12 @@ const GlobalSearch = ({ data, config, keyFn, isLoaded }) => {
 				</div>
 			</div>
 			{isLoaded ? (
-				<TablePage config={config} keyFn={keyFn} usersData={filterData()} />
+				<TablePage
+					interactive={interactive}
+					config={config}
+					keyFn={keyFn}
+					usersData={filterData()}
+				/>
 			) : (
 				<div className="display-center">
 					<ReactLoading
