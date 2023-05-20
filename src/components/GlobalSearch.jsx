@@ -21,7 +21,7 @@ const GlobalSearch = ({ data, config, keyFn, isLoaded }) => {
 		<div>
 			<div className="input-div">
 				<div className="input-div bg-slate-200">
-					<IoSearch />
+					<IoSearch className="icon" />
 					<input
 						className="input bg-slate-200"
 						type="text"

@@ -17,7 +17,6 @@ table {
 tr:nth-child(odd) {
 	background-color: #f8f8f8;
 }
-
 .post-panel:hover {
 	background-color: #3b82f6;
 	color: #fff;
@@ -59,6 +58,10 @@ tr:nth-child(odd) {
 	/* gap: 1rem; */
 	padding: 1rem;
 	border-radius: 10px;
+}
+
+.icon {
+	color: #9ca3af;
 }
 
 .input {

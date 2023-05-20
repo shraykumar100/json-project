@@ -77,5 +77,4 @@ const Users = () => {
 	);
 };
 
-// export {usersData}
 export default Users;

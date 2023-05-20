@@ -5,16 +5,19 @@ const Navbar = () => {
 		<div className="nav flex justify-between sticky top-0 ">
 			<h1>JSON Project</h1>
 
-			<ul className="flex  gap-5 nav-ul">
+			<ul className="flex  gap-2 nav-ul">
 				<li>
-					<NavLink to="/">Users |</NavLink>
+					<NavLink to="/">Users</NavLink>
 				</li>
+				<li>|</li>
 				<li>
-					<NavLink to="/posts">Posts |</NavLink>
+					<NavLink to="/posts">Posts</NavLink>
 				</li>
+				<li>|</li>
 				<li>
-					<NavLink to="/posts_comments">Post Comments |</NavLink>
+					<NavLink to="/posts_comments">Post Comments</NavLink>
 				</li>
+				<li>|</li>
 				<li>
 					<NavLink to="/users_comments">User&apos;s Comments</NavLink>
 				</li>

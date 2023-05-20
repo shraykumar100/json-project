@@ -8,7 +8,6 @@ function App() {
 	return (
 		<div className="main">
 			<Navbar />
-			{/* <Nav /> */}
 			<Routes>
 				<Route path="/" element={<Api />} />
 				<Route path="/posts" element={<Post />} />
